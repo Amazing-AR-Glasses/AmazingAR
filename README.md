@@ -76,9 +76,10 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
 #### 1) 개발 일정
 
-- 개발 일정 계획
+- 개발 계획 시 일정 대비 개발 진행도 별도 표시
 ```mermaid
 gantt
+   title 개발 계획 시 일정
    dateFormat  YYYY-MM-DD
    section Prepare
    팀 구성  : 2023-10-13, 1d
@@ -106,9 +107,9 @@ gantt
 ```
 </br>
 
-- 계획 대비 진행된 상황
 ```mermaid
 gantt
+   title 계획 대비 진행도
    dateFormat  YYYY-MM-DD
    section Prepare
    팀 구성  : done, 2023-10-13, 1d
