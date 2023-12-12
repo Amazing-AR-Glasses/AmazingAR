@@ -75,7 +75,68 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 ### 개발 체계
 
 #### 1) 개발 일정
--
+
+- 개발 일정 계획
+```mermaid
+gantt
+   dateFormat  YYYY-MM-DD
+   section Prepare
+   팀 구성  : 2023-10-13, 1d
+   아이디어 구상 : 2023-10-13, 4d
+   프로젝트 제안 : 2023-10-17, 2d
+
+   section Scene
+   Main Scene : 2023-11-01, 20d
+   Loading Scene : 2023-11-01, 13d
+   Ending Scene : 2023-11-13, 14d
+
+   section Controller
+   UI 배치 : 2023-11-01, 14d
+   버튼 기능 구상 : 2023-11-13, 7d
+   기능 개발 : 2023-11-20, 7d
+   AR Glass 시점 모니터링 개발 : 2023-11-20, 14d
+
+   section Play
+   AR Glass-Android 연동 :  2023-11-01, 14d
+   햅틱 장치 위 가상 물체 증강 : 2023-11-13, 14d
+   에셋 배치 : 2023-11-20, 7d
+   UI(가사 등) 배치 : 2023-11-27, 21d
+   기본 기능 개발 : 2023-11-27, 21d
+   햅틱 장치-Unity 연동 : 2023-12-04, 14d
+```
+</br>
+
+- 계획 대비 진행된 상황
+```mermaid
+gantt
+   dateFormat  YYYY-MM-DD
+   section Prepare
+   팀 구성  : done, 2023-10-13, 1d
+   아이디어 구상 : done, 2023-10-13, 4d
+   프로젝트 제안 : done, 2023-10-17, 2d
+
+   section Scene
+   Main Scene : done, 2023-11-01, 20d
+   Loading Scene : done, 2023-11-01, 13d
+   Ending Scene : done, 2023-11-13, 14d
+
+   section Controller
+   UI 배치 : done, 2023-11-01, 14d
+   버튼 기능 구상 : done, 2023-11-13, 7d
+   기능 개발 : done, 2023-11-20, 7d
+   AR Glass 시점 모니터링 개발 : done, 2023-11-01, 30d
+
+   section Play
+   AR Glass-Android 연동 :  done, 2023-11-01, 14d
+   햅틱 장치 위 가상 물체 증강 : done, 2023-11-13, 7d
+   에셋 배치 : done, 2023-11-20, 7d
+   UI(가사 등) 배치 : done, 2023-11-27, 21d
+   기본 기능 개발 : done, 2023-11-27, 21d
+   햅틱 장치-Unity 연동 : 2023-12-14, 20d
+```
+   -  AR Glass 시점 모니터링 개발 및 햅틱 장치 위 가상 물체 증강 개발은 예정보다 빠르게 진행되었다.
+   - 햅틱 장치-Unity 연동은 햅틱 장치 미완성으로 인해 예정 기간 내에 완성하지 못 하였으며, 완성되는 대로 프로젝트에 연동 예정이다.
+
 
 #### 2) 업무 분장
 -
