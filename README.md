@@ -179,40 +179,40 @@ gantt
 ### 사용 설명서
 **1) 햅틱패드-햅틱스틱 연결 확인**</br>
 &nbsp;&nbsp;&nbsp;1. 애플리케이션을 실행한다. </br>
-&nbsp;&nbsp;&nbsp;2. 화면 우측 상단에 위치한 설정 버튼()을 탭한다. </br>
+&nbsp;&nbsp;&nbsp;2. 화면 우측 상단에 위치한 설정 버튼(<img src="/Images/Button/settingButton.png" alt="settingButton" width="20" height="20"></img>)을 탭한다. </br>
 &nbsp;&nbsp;&nbsp;3. 설정 화면이 나타나면, 팝업 창에서 햅틱패드와 햅틱스틱의 연결 상태를 확인할 수 있다. </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 초록색으로 활성화되고 '연결됨' 메시지가 표시되면, 성공적으로 연결된 상태이다. </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 초록색이 비활성화되고 '연결 안 됨' 메시지가 표시되면, 연결이 되지 않은 상태이다. </br>
        
  </br>**2) 상단 위치 기본 기능 버튼**</br>
    - 화면 상단에 위치한 기본 기능 버튼들은 화면에서 항상 제공된다. </br>
-      - 설정 버튼() : 설정 화면을 띄운다. </br>
-      - 홈 버튼() : 홈 화면으로 이동한다. </br> 
-      - 뒤로가기 버튼() : 이전 화면으로 이동한다. </br>
+      - 설정 버튼(<img src="/Images/Button/settingButton.png" alt="settingButton" width="20" height="20"></img>) : 설정 화면을 띄운다. </br>
+      - 홈 버튼(<img src="/Images/Button/homeButton.png" alt="homeButton" width="20" height="20"></img>) : 홈 화면으로 이동한다. </br> 
+      - 뒤로가기 버튼(<img src="/Images/Button/backButton.png" alt="backButton" height="20"></img>) : 이전 화면으로 이동한다. </br>
     
  </br>**3) 음악 놀이 진행**</br>
 &nbsp;&nbsp;&nbsp;3-1) 콘텐츠 선택</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. 애플리케이션을 실행한다.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. 로딩 화면이 표시된 후, 자동으로 홈 화면으로 이동한다.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. 콘텐츠 선택 전, 객체 증강을 위해 QR 코드를 먼저 인식해준다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. 홈 화면에서 하단 중심에 위치한 '콘텐츠 선택' 버튼()을 탭하면, 콘텐츠 선택 화면으로 전환된다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. 홈 화면에서 하단 중심에 위치한 '콘텐츠 선택' 버튼(<img src="/Images/Button//contentsButton.png" alt="contentsButton" width="30" height="25"></img>)을 탭하면, 콘텐츠 선택 화면으로 전환된다.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5. 제공된 다양한 콘텐츠 중 원하는 하나를 선택한다.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6. 선택한 콘텐츠에 따라 핸드폰 컨트롤러와 AR Glass 화면이 전환된다.</br>
   
 &nbsp;&nbsp;&nbsp;3-2) 음악놀이 기능</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 선택한 콘텐츠로 화면이 전환되면, 아래와 같은 음악놀이를 제어할 수 있는 버튼들이 제공된다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '선택한 콘텐츠' 재생 버튼() : 선택한 콘텐츠로 음악 놀이를 시작하려면 해당 버튼을 탭한다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '한 번 더!' 다시 시작 버튼() : 선택한 콘텐츠를 처음부터 다시 음악 놀이를 시작하고 싶을 때 사용한다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 음악 감상 버튼() : 선택한 콘텐츠를 감상 모드로 진행하고 싶을 때 해당 버튼을 탭하며, 음악 놀이 없이 음악만 재생된다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 결과 분석 버튼() : 음악 놀이를 종료하며, 결과 화면으로 이동한다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 손 증강 활성화 버튼() : 해당 버튼을 탭하면, 사용자의 손을 따라 햅틱 스틱을 가진 가상의 손으로 증강되어 나타난다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '선택한 콘텐츠' 재생 버튼(<img src="/Images/Button/playButton.png" alt="palyButton" width="30" height="25"></img>) : 선택한 콘텐츠로 음악 놀이를 시작하려면 해당 버튼을 탭한다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- '한 번 더!' 다시 시작 버튼(<img src="/Images/Button/retryButton.png" alt="retryButton" width="30" height="25"></img>) : 선택한 콘텐츠를 처음부터 다시 음악 놀이를 시작하고 싶을 때 사용한다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 음악 감상 버튼(<img src="/Images/Button/listenButton.png" alt="listenButton" width="30" height="25"></img>) : 선택한 콘텐츠를 감상 모드로 진행하고 싶을 때 해당 버튼을 탭하며, 음악 놀이 없이 음악만 재생된다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 결과 분석 버튼(<img src="/Images/Button/resultButton.png" alt="resultButton.png" height="20"></img>) : 음악 놀이를 종료하며, 결과 화면으로 이동한다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 손 증강 활성화 버튼(<img src="/Images/Button/handButton.png" alt="handButton.png" width="20" height="20"></img>) : 해당 버튼을 탭하면, 사용자의 손을 따라 햅틱 스틱을 가진 가상의 손으로 증강되어 나타난다.</br>
 
 &nbsp;&nbsp;&nbsp;3-3) 결과 분석</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 결과 분석 버튼()을 탭하면, 결과 분석 화면으로 이동한다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 결과 분석 버튼(<img src="/Images/Button/resultButton.png" alt="resultButton.png" height="20"></img>)을 탭하면, 결과 분석 화면으로 이동한다.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 햅틱 장치를 통해 얻은 각각의 점수를 확인할 수 있다.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 햅틱 장치에서 얻은 점수를 기반으로 계산된 총 점수가 우측에 가장 크게 나타난다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 하단에 위치한 '콘텐츠 선택' 버튼()을 통해 다른 콘텐츠를 선택할 수 있도록 콘텐츠 선택 화면으로 돌아간다.</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 하단에 위치한 '한 번 더!' 버튼()을 통해 현재 콘텐츠를 다시 한 번 플레이 한다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 하단에 위치한 '콘텐츠 선택' 버튼(<img src="/Images/Button//contentsButton.png" alt="contentsButton" width="30" height="25"></img>)을 통해 다른 콘텐츠를 선택할 수 있도록 콘텐츠 선택 화면으로 돌아간다.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 하단에 위치한 '한 번 더!' 버튼(<img src="/Images/Button/retryButton.png" alt="retryButton" width="30" height="25"></img>)을 통해 현재 콘텐츠를 다시 한 번 플레이 한다.</br>
 
 
 </br>
