@@ -175,7 +175,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
 1) NRSDK
 <p align = "center">
-   <img src="/Images/OpenScript/NRVirtualDisplayer.png" alt="NRVirtualDisplayer">
+   <img src="/Images/OpenScript/NRVirtualDisplayer.png" alt="NRVirtualDisplayer" height = 350>
 </p>
 <p align = "center">
    <em>NRSDK의 NR Virtual Displayer 활용</em>
@@ -186,7 +186,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 </br>
 
 <p align = "center">
-   <img src="/Images/OpenScript/NRHand.png" alt="NRHandMeshVisual">
+   <img src="/Images/OpenScript/NRHand.png" alt="NRHandMeshVisual" height = 350>
 </p>
 <p align = "center">
    <em>NRSDK의 NR Hand Mesh Visual 활용</em>
@@ -199,7 +199,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 </br>
 
 <p align = "center">
-   <img src="/Images/OpenScript/NRPreviewer.png" alt="NRPreviewer">
+   <img src="/Images/OpenScript/NRPreviewer.png" alt="NRPreviewer" height = 300>
 </p>
 <p align = "center">
    <em>NRSDK의 NR Previewer 활용</em>
@@ -215,7 +215,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
 2. MAXST
 <p align = "center">
-   <img src="/Images/OpenScript/MAXST.png" alt="ImageTrackableBehavior">
+   <img src="/Images/OpenScript/MAXST.png" alt="ImageTrackableBehavior" height = 300>
 </p>
 <p align = "center">
    <em>NRSDK의 ImageTrackableBehavior 활용</em>
@@ -370,7 +370,7 @@ gantt
 #### 1) 문제 및 해결 방안
 
 <p align = "center">
-   <img src="/Images/AndroidManifest.png" alt="AndroidManifest">
+   <img src="/Images/AndroidManifest.png" alt="AndroidManifest" height = 350>
 </p>
 <p align = "center">
    <em>안드로이드 권한 설정</em>
