@@ -51,6 +51,9 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
 #### 1. 전체 시스템 구성도
 <img src="/Images/Overall System.png" alt="Overall System"></img>
+- 사용자가 AR 글래스를 착용하고 스마트폰을 통해 AR 애플리케이션을 활성화하면 음악 놀이 콘텐츠가 시각화되고 실제 환경으로 증강된다.
+- 햅틱 스틱은 사용자의 입력을 받아들이고 촉각 피드백을 제공한다. 이러한 햅틱 스틱을 사용하여 햅틱 패드를 타격할 수 있다.
+- 햅틱 패드는 타격 시 인가되는 압력을 측정한다.
 
 #### 2. 주요 기능별 씬(Scene) 흐름도
 -
