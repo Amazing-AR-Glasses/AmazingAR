@@ -71,7 +71,8 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
 #### 2. 주요 기능별 씬(Scene) 흐름도
 
-1. 콘텐츠 선택
+</br>
+1) 콘텐츠 선택
 <p align = "center">
    <img src="/Images/SceneFlow/contentsScene.png" alt="contentsScene" height = 250>
 </p>
@@ -80,8 +81,9 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 </p>
 
    - Loading Scene 뒤, Main Scene으로 이동하며, Main Scene의 ‘콘텐츠 선택’ 버튼을 누르면 콘테츠 선택 Scene으로 넘어가게 된다. 제공된 콘텐츠 중 원하는 콘텐츠를 선택하면 된다. 현재 제공된 콘텐츠는 두 가지이며, 추후 더 다양한 콘텐츠가 추가될 예정이다. </br>
+</br></br>
 
-2~3. 음악 놀이 플레이 및 모니터링
+2~3) 음악 놀이 플레이 및 모니터링
 <p align = "center">
    <img src="/Images/SceneFlow/playMonitoringScene.png" alt="playMonitoringScene" height = 250>
 </p>
@@ -91,9 +93,10 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
    - 콘텐츠 선택 시, 음악 놀이 플레이 및 모니터링 Scene으로 전환된다. 핸드폰 컨트롤러의 화면에서는 모니터링을 위해 AR Glass 화면이 캡쳐되어 제공되며, 음악 놀이 관리 기능을 포함하는 버튼이 제공된다.
    - 제공되는 버튼은 총 네 가지로, 상단 좌측부터 순서대로 ‘재생’, ‘다시 시도’, ‘음악 감상’ 버튼이다. 하단 우측에 ‘결과 분석’ 버튼으로 음악놀이가 종료되고 플레이 결과를 확인할 수 있는 화면으로 이동한다.
-   - 상단에서는 노래 가사가 나타나며, 박자에 맞게 막대바가 나타나 사용자는 막대바가 떨어지는 리듬에 맞춰 햅틱 패드를 치게 된다.  </br>
+   - 상단에서는 노래 가사가 나타나며, 박자에 맞게 막대바가 나타나 사용자는 막대바가 떨어지는 리듬에 맞춰 햅틱 패드를 치게 된다. </br>
+</br></br>
 
-4. 결과 분석
+4) 결과 분석
 <p align = "center">
    <img src="/Images/SceneFlow/resultScene.png" alt="resultScene" height = 200>
 </p>
@@ -104,8 +107,9 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
   - 핸드폰 컨트롤러의 ‘결과 분석’ 버튼을 누르게 되면, 결과 분석 Scene으로 이동한다.
   - 해당 Scene에서는 사용자의 음악 놀이 플레이 결과 및 버튼이 배치되어 있다.
   - 우측 하단의 ‘콘텐츠 선택’ 버튼과 ‘한 번 더’ 버튼으로 사용자가 콘텐츠를 다시 선택하거나 선택했던 콘텐츠를 재시도 할 수 있도록 한다.</br>
+</br></br>
 
-5. 환경 설정
+5) 환경 설정
 <p align = "center">
    <img src="/Images/SceneFlow/settingScene.png" alt="settingScene" height = 250>
 </p>
@@ -114,7 +118,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 </p>   
 
    - 각 Scene 마다 상단 우측에 위치한 설정 버튼을 탭하면 환경 설정 화면이 팝업으로 나타나게 된다. 배경음악 및 효과음 크기 조절 및 기기 연동 유무를 확인할 수 있다.
-
+</br></br>
 
 #### 3. 주요 기능 개발 내용
 -
