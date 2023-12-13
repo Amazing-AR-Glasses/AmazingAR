@@ -17,6 +17,7 @@
 
 #### 동영상 링크
 
+
 </br>
 <hr>
 
@@ -71,10 +72,17 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 
 #### 2. 주요 기능별 씬(Scene) 흐름도
 
+<p align = "center">
+   <img src="/Images/SceneFlow/programScene.png" alt="programScene" height = 500>
+</p>
+<p align = "center">
+   <em>전체 Scene 흐름</em>
+</p>
+
 </br>
 1) 콘텐츠 선택
 <p align = "center">
-   <img src="/Images/SceneFlow/contentsScene.png" alt="contentsScene" height = 250>
+   <img src="/Images/SceneFlow/contentsScene.png" alt="contentsScene" height = 200>
 </p>
 <p align = "center">
    <em>콘텐츠 선택 기능 Scene 흐름</em>
@@ -148,17 +156,84 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
      Japanese School - Stylized : https://assetstore.unity.com/packages/3d/environments/japanese-school-stylized-221256 </br>
      Minimalist Christmas : https://assetstore.unity.com/packages/3d/environments/minimalist-christmas-50549
 
+</br>
+</br>
 
 #### 2. 오픈 소스 사용법 및 활용한 기능
-- NRSDK
+
+<p align = "center">
+   <img src="/Images/OpenScript/OpenScript.png" alt="OpenScript">
+</p>
+<p align = "center">
+   <em>NRSDK 및 MAXST의 사용한 Script</em>
+</p>
+
+- NRSDK의 스크립트 NR Virtual Displayer, NR Previewer, NR Hand Mesh Visual 스크립트를 활용하여 컨트롤러 및 모니터링 기능, 손 증강 구현
+- MAXST의 ImageTrackableBehavior 스크립트를 활용하여 QR code 추적을 통해 객체가 증강되어 배치되도록 구현
+</br>
+</br>
+
+1) NRSDK
+<p align = "center">
+   <img src="/Images/OpenScript/NRVirtualDisplayer.png" alt="NRVirtualDisplayer">
+</p>
+<p align = "center">
+   <em>NRSDK의 NR Virtual Displayer 활용</em>
+</p>
+
+   - NR Virtual Displayer
+        - 컨트롤러 기능을 제공하며, 이를 활용하여 원하는 버튼이나 기타 UI를 디자인하였다.
+</br>
+
+<p align = "center">
+   <img src="/Images/OpenScript/NRHand.png" alt="NRHandMeshVisual">
+</p>
+<p align = "center">
+   <em>NRSDK의 NR Hand Mesh Visual 활용</em>
+</p>
+
+- NR Hand Mesh Visual
+     - 손 증강 기능을 담당하며, AR Glass의 카메라를 활용하여 사용자의 손을 추적하고 악기 스틱과 함께 시각적으로 표현하였다.
+     - 스크립트의 Start에서 CreateMeshVisual 함수를 호출하여 손을 가져오게 되는데, CreateMeshVisual 내에 InitHandLength 함수는 손, 손가락 관절을 초기화하는 기능을 포함하고 있다.
+     - On Hand Tracking 함수에서는 CreateMeshVisual 함수에서 초기화해준 손, 손가락 관절 프리팹이 할당되어 있으며, 사용자 손의 추적 상태에 따라 손 모델을 시각화해주는 기능을 담당한다.
+</br>
+
+<p align = "center">
+   <img src="/Images/OpenScript/NRPreviewer.png" alt="NRPreviewer">
+</p>
+<p align = "center">
+   <em>NRSDK의 NR Previewer 활용</em>
+</p>
+
+- NR Previewer
+     - 모니터링 기능을 제공한다. 해상도, 프레임 속도 등의 요소로 카메라를 설정하고 OnStartedVideoCaptureMode를 호출하여 사용하게 된다.
+     - 캡쳐모드가 성공적으로 시작되면 비디오 녹화를 시작한다. 비디오 캡처의 미리보기 텍스처를 설정해주게 되며, 이를 활용한 녹화 중에 실시간으로 미리보기를 제공하여 모니터링 기능을 가능하게 하였다.
+
+</br>
+</br>
 
 
-- MAXST
+2. MAXST
+<p align = "center">
+   <img src="/Images/OpenScript/MAXST.png" alt="ImageTrackableBehavior">
+</p>
+<p align = "center">
+   <em>NRSDK의 ImageTrackableBehavior 활용</em>
+</p>
 
+- ImageTrackableBehavior
+     - 환경 증강 기능을 제공한다.
+     - Unity에서 설정해준 이미지를 바탕으로 이미지(QR code) 추적이 성공하면, 해당 이미지의 위치와 회전 정보를 가져와 콘텐츠의 가상 환경을 해당 위치에 배치하여 증강시킨다.
 
-- Unity Asset Store
-   - 원하는 에셋을 검색하여 다운로드 한 뒤, Unity 에디터로 돌아가 Import 하여 프로젝트에 추가하여 사용한다.
+</br>
+</br>
 
+3. Unity Asset Store
+   - Unity Asset Store에서 원하는 에셋을 선택한 후, 다운로드 한다.
+   - Unity 에디터로 돌아가 프로젝트를 연 후, Unity 에디터의 Window - Asset Store - My Assets 탭에서 에셋을 확인한다.
+   - 원하는 에셋을 Import 하여 프로젝트에 추가하여 활용하였다.
+
+</br>
 </br>
 <hr>
 
@@ -239,7 +314,11 @@ gantt
 
 
 #### 3) 협업 방법 및 활용 툴
--
+| 협업 내용   |  협업 방법 및  활용 툴 |
+| ------ | ------ |
+| 회의 방법  | - 대면 및 비대면 회의 모두 활용 </br>- 대면 회의는 필요한 경우 직접 만나서 의사 소통 및 논의 진행</br>- 비대면 회의는 Discord를 이용하여 화상 또는 음성으로 진 |
+| 문서 및 자료 공유  | - Google 공유 폴더 사용하여 프로젝트에 필요한 문서 및 자료들을 효율적으로 관리하고 공유</br>- 프로젝트 관련 문서, 회의록, 파일 등이 Google Drive를 통해 공동 작업 및 업데이트  |
+| Unity 개발환경 | - Unity의 'Export Package' 기능을 활용하여 프로젝트의 일부 또는 특정 기능들을 패키지로 만들어 공유 </br>- 개발된 패키지는 다른 개발자들이 손쉽게 프로젝트에 통합할 수 있도록 함 | 
 
 </br>
 <hr>
@@ -289,7 +368,26 @@ gantt
 ### 고찰
 
 #### 1) 문제 및 해결 방안
--
+
+<p align = "center">
+   <img src="/Images/AndroidManifest.png" alt="AndroidManifest">
+</p>
+<p align = "center">
+   <em>안드로이드 권한 설정</em>
+</p>
+
+- 안드로이드 권한 설정
+     - 모니터링 기능을 구현하던 중, 실행이 예상과 다르게 되어 시간이 많이 소요되었다. 카메라를 사용하기 위해서는 위의 이미지와 같이 권한을 요청해야 했는데, 해당 내용을 알지 못해 처음에는 문제가 없는 코드만 수정하려고 했더니 많은 시행 착오를 겪게 되었다.
+</br>
+
+- 안드로이드 권한 설정 문제 해결 방안
+     - 권한 요청 구현
+          - 카메라 권한이 필요하다는 것을 인지하고, 안드로이드 권한을 요청하는 코드를 추가
+          - 'AndroidManifest.xml' 파일에 권한을 추가하고, 런타임에서 권한을 체크하도록 요청하는 로직 구현</br>
+   
+   - 문제 해결 과정 기록
+        - 문제 해결을 위해 시도한 각 단계와 변경 사항을 기록하여, 비슷한 문제 발생 시 신속하게 대응 가능하도록 대비
+        - 구글 검색 및 안드로이드 공식 문서를 참고하여 필요한 정보 습득 및 이해
 
 #### 2) 한계점
 - 햅틱 장치의 부재 (2023/12/10 기준)
