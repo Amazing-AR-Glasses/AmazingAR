@@ -50,7 +50,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 ### 개발 내용
 
 #### 1. 전체 시스템 구성도
--
+<img src="/Images/Overall System.png" alt="Overall System"></img>
 
 #### 2. 주요 기능별 씬(Scene) 흐름도
 -
