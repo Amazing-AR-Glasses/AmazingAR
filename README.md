@@ -50,7 +50,8 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 ### 개발 내용
 
 #### 1. 전체 시스템 구성도
--
+<img src="![image](https://github.com/Amazing-AR-Glasses/AmazingAR/assets/102850226/0b3fbc6d-d2eb-42b2-8ece-8d0fc73a8119)
+" alt="ARinSchool"></img>
 
 #### 2. 주요 기능별 씬(Scene) 흐름도
 -
