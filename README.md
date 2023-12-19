@@ -16,7 +16,7 @@
 
 
 #### 동영상 링크
-
+https://youtu.be/ngtpPCOMI8k 
 
 </br>
 <hr>
