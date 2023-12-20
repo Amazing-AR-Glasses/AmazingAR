@@ -131,7 +131,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 #### 3. 주요 기능 개발 내용
 
 <p align = "center">
-   <img src="/Images/class/VideoCapture.png" alt="VideoCapture" height = 200>
+   <img src="/Images/class/VideoCapture.png" alt="VideoCapture" height = 300>
 </p>
 <p align = "center">
    <em>VideoCapture2Local Example</em>
@@ -171,7 +171,7 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 </br>
 
 <p align = "center">
-   <img src="/Images/class/NRHandMesh.png" alt="NRHandMeshVisual" height = 100>
+   <img src="/Images/class/NRHandMesh.png" alt="NRHandMeshVisual" height = 200>
 </p>
 <p align = "center">
    <em>NRHandMeshVisual</em>
