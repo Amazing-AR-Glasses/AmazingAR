@@ -129,7 +129,63 @@ http://www.grinews.co.kr/front/news/view.do?articleId=12656
 </br></br>
 
 #### 3. 주요 기능 개발 내용
--
+
+<p align = "center">
+   <img src="/Images/class/VideoCapture.png" alt="VideoCapture" height = 200>
+</p>
+<p align = "center">
+   <em>VideoCapture2Local Example</em>
+</p>
+
+- 주요 멤버 변수는 m_Previewer이며, NRPreviewer 객체로 녹화된 비디오의 미리보기를 표시하는데 사용한다.
+- StartVideoCapture(): 비디오 캡처를 시작한다. NRSDK를 사용하여 비디오 모드를 설정하고 영상 녹화를 시작한다.
+- StopVideoCapture(): 현재 녹화 중인 비디오를 중지한다. NRSDK를 사용하여 녹화를 중지하고 녹화된 미리보기를 NRPrieviewer에 전달한다.
+</br>
+
+<p align = "center">
+   <img src="/Images/class/NRPreviewer.png" alt="NRPreviewer" height = 200>
+</p>
+<p align = "center">
+   <em>NRPreviewer</em>
+</p>
+
+- 주요 멤버 변수는 아래와 같다.
+  1. Root : 비디오 미리보기 화면의 루트 GameObject이다.
+  2. PreviewScreen : 비디오 미리보기를 표시하는 RawImage UI 요소이다.
+  3. StateIcon : 비디오 재생 상태를 나타내는 Image UI 요소이다.
+- SetData(Texutre tex, bool isplaying): NRVideoCapture에서 전달된 녹화된 비디오의 미리보기를 설정한다.
+- SwitchPerview(bool flag): 미리보기 화면을 표시하거나 숨기는 기능이지만, 프로젝트에서는 화면을 계속 표시하도록 한다.
+</br>
+
+<p align = "center">
+   <img src="/Images/class/ImageTrackable.png" alt="ImageTrackable" height = 100>
+</p>
+<p align = "center">
+   <em>ImageTrackableBehavior</em>
+</p>
+
+- NRPreviewer 클래스는 VideoCapture2LocalExample 클래스에서 사용되는 중요한 UI 컴포넌트들을 캡슐화하고 있다. VideoCapture2LocalExample 클래스에서 NRPreviewer 객체를 사용하여 녹화된 비디오의 미리보기를 제어한다.
+- 주요 멤버 변수는 없으며, OnTrackSuccess 함수와 OnTrackFail 함수가 존재한다.
+   - OnTrackSuccess(string, string, Matrix4x4) : 이미지 트래킹에 성공했을 때 호출되며, 트래킹된 이미지의 ID, 이름 및 변환 매트릭스(poseMatrix)를 전달받는다. 해당 이미지 트래킹이 성공하면, Rendere와 Collider 컴포넌트를 가진 요소들을 활성화한다. poseMatrix를 사용하여 객체의 위치와 회전을 설정한다.
+   - OnTrackFail(): 이미지 트래킹이 실패했을 때 호출된다. 이미지 트래킹이 실패하면, 자식 객체들 중에서 Renderer와 Collider 컴포넌트를 가진 요소들을 비활성화 한다.
+</br>
+
+<p align = "center">
+   <img src="/Images/class/NRHandMesh.png" alt="NRHandMeshVisual" height = 100>
+</p>
+<p align = "center">
+   <em>NRHandMeshVisual</em>
+</p>
+
+- 주요 멤버 변수로는 m_HandPrefab, m_HandMeshJoint, m_HandLengthJoints, m_HandLength 총 4가지가 존재한다.
+- CreateMeshVisuals(): 클래스는 손의 Mesh를 시각적으로 나타낸다.
+- InitHandLength(): 손의 길이를 초기화한다.
+- OnEnable(): 손 추적이 활성화될 때의 작업을 정의한다.
+- OnDisable(): 손 추적이 비활성화될 때의 작업을 정의한다.
+- OnHandTracking(): 추적이 활성화되면 손의 상태 및 손의 관절 상태를 업데이트한다.
+- UpdateWristByMiddle(HandState): 손목과 중지 사이의 관계를 업데이트한다. 손목의 위치와 회전을 조정하여 손가락의 중지 관절 사이의 거리를 유지한다.
+- OnHandTrackingStopped() : 손 추적이 중지되었을 때의 동작을 정의하며 손 Mesh를 비활성화 한다.
+
 
 #### 4. 장르 특성화 방안
 
