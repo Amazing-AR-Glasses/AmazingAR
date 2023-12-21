@@ -1,0 +1,13 @@
+ARGlass조: AR 글래스를 활용한 유아용 교육 및 놀이 콘텐츠
+
+APK: hihoimage_laste.apk
+
+[사용법]
+1. 해당 apk를 다운로드한다.
+2. 사용자는 ar glass를 착용하고 어플을 실행한다.
+3. 로딩화면이 뜬 후, 메인화면이 뜬다.
+4. 메인화면에서 phone controller를 활용하여 콘텐츠 선택 버튼을 누른다.
+5. phone controller를 활용하여 작은별과 학교종 중 원하는 콘텐츠를 선택한다.
+6. ar glass를 통해 제시된 QR code 이미지를 3초간 본다.
+7. QR code 이미지 위에 가상환경이 뜨는 것을 확인한다.
+8. phone controller를 활용하여 재생 버튼을 누르고 본 콘텐츠를 즐긴다.
